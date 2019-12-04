@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8" />
+   <title>Todd Adcox Jr</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- links the following style sheets -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/general.css" />
+   <!-- links a font from google -->
+   <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet" />
+</head>
+
+<body>
+   <header>
+        <nav>
+           <ul>
+               <!-- links to different pages on the website -->
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Education</a></li>
+               <li><a href="#">Skillset</a></li>
+               <li><a href="#">Work Experience</a></li>
+           </ul>
+       </nav>
+   </header>
+   <br>
+   <h2 id="about">About Me</h2>
+   <p>Hi, my name is Todd Adcox Jr im a hardworking, patient first year Coding student who is a good listener and is
+       able to work under pressure. I am seeking the position of Web Developer. Currently, I am learning the
+       fundamentals of coding, starting off with HTML and CSS, and soon JavaScript, at Western Maricopa Education
+       Center. I was born in Phoenix , Arizona and that is still where I currently reside. In my personal time, I
+       enjoy cooking, playing video games, being with family and friends, and just enjoying life.</p>
+   <br>
+
+
+   <br>
+
+   <!-- A form that submits contact information -->
+    <form name="contactForm" action="mailto:toddjr021@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+
+            <!-- The title of the form, appears at the top of the form. -->
+            <legend>Contact us for more questions!</legend>
+
+            <!-- This field requests the users name -->
+            <div class="formRow">
+                <label for="name">Name*</label>
+
+                <!-- This field is required, has placeholder text to let the user know what is needed. -->
+                <input name="custName" id="name" type="text" placeholder="First and Last name" required />
+            </div>
+
+            <!-- This field requests the users phone number -->
+            <div class="formRow">
+                <label for="phone">Phone number*</label>
+
+                <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the number is real and not just a random set of numbers -->
+                <input name="phone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" required
+                    pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            </div>
+
+            <!-- This field requests the users email -->
+            <div id="formRow">
+                <label for="mail">E-mail*</label>
+
+                <!-- This field is required, has placeholder text to let the user know what is needed. Has a regex to test if the email is real and not just a random set of characters -->
+                <input type="email" name="custEmail" id="mail" placeholder="example@gmail.com" required />
+            </div>
+
+            <div>
+                <!-- A text area box to let the user type questions they have. -->
+                <label for="commBox" id="commBox">Lets us know of any questions you have</label>
+                <textarea name="custExp" id="commBox"></textarea>
+
+        </fieldset>
+
+        <div id="buttons">
+
+            <!-- Submit button -->
+            <input type="submit" id="submittButton" value="Submit My Survey" />
+
+            <!-- Cancel button -->
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
+ <script src="js/submitForm.js"></script>
+</body>
+
+</html>

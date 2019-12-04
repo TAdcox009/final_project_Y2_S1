@@ -8,6 +8,63 @@
     src: url('https://fonts.googleapis.com/css?family=Kalam');
 }
 
+/* form styles */
+
+/* sets the min and max width of the form, gives it a line height of 50 pixels. */
+form {
+    min-height: 81%;
+    margin: auto;
+    min-width: 480px;
+    max-width: 960px;
+    width: 100%;
+    line-height: 50px;
+}
+
+/* The top and bottom magrin is set to 0 pixels and the left and right margin is set to 50 pixels. */
+div {
+    margin: 0px 50px;
+}
+
+/* Adds a border around the form, rounds the border, adds a linear-gradient to inside the form. */
+fieldset {
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+    background: linear-gradient(white, rgb(230, 230, 230));
+}
+
+/* Sets the font size of the legend text to 2em, adds 5 pixels of space between each letter. */
+legend {
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+/* For the input element with the IDs of name, phone, and mail, they are being floated right, and given a width of 30% of the screen and 20 pixels of height. */
+input#name,
+input#phone,
+input#mail {
+    float: right;
+    width: 30%;
+    height: 20px;
+}
+
+/* Floats the textarea box right to line up with the input boxes, sets the width and height of the textarea box. */
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 55%;
+    float: right;
+    font-size: 14px;
+}
+
+/* Centers the submit and cancel button for the form. */
+div#buttons {
+    text-align: center;
+}
+
+/* end form styles */
+
+
 /* nav styles */
 
 /* the nav is being centerd, has no underline under it. displays it in the same line, adds 50 pixels of padding to the left and right, changes the background color to black */
@@ -32,12 +89,6 @@ nav li {
     height: 25px;
 }
 
-/* the image with the id of navimg has a height of 300 pixels and a width of 100% of the page body */
-img#navimg {
-    height: 300px;
-    width: 100%;
-}
-
 /* for the following elements, it centers the text */
 p,
 h1,
@@ -48,78 +99,18 @@ h3,
     text-align: center;
 }
 
-/* adds the following font family to the body, adds 10 pixels of padding */
+/* adds the following font family to the body, adds 10 pixels of padding, the text of body is set to black with a background color of light gray */
 body {
     font-family: 'Kalam', cursive;
     padding-bottom: 10px;
+    color: black;
+    background-color: white;
 }
 
 /* for all p tags the font size is being set to 20 pixels */
 p {
     font-size: 20px;
 }
-
-/* image styles */
-
-/* the images with the id of phoneicon and emailicon are being set to a width and height of 20 pixels, and adds 5 pixels of padding to the right */
-#phoneicon,
-#emailicon {
-    width: 20px;
-    height: 20px;
-    padding-right: 5px;
-}
-
-/* the element that has a id of code is being floated left, adds 25 pixels of padding to the left and 10 pixels of padding to the bottom, has a width of 350 pixels and a height of 200 pixels */
-#code {
-    float: left;
-    padding: 0px 0px 10px 25px;
-    width: 350px;
-    height: 200px;
-}
-
-/* the element that has a id of westmec is being floated right, adds 25 pixels of padding to the right and 10 pixels of padding to the bottom, has a width and height of 200 pixels */
-#westmec {
-    float: right;
-    padding: 0px 25px 10px 0px;
-    width: 200px;
-    height: 200px;
-}
-
-fieldset {
-    border: 0px;
-}
-
-form {
-    text-align: center;
-
-}
-
-textarea {
-    margin-top: 10px;
-    height: 100px;
-    width: 400px;
-}
-
-.form {
-    padding-top: 10px;
-}
-
-#buttons {
-    padding-left: 150px;
-}
-
-input#name:focus:valid,
-input#phone:focus:valid,
-input#mail:focus:valid {
-    background: rgb(156, 235, 156) url(valid.png) bottom right/contain no-repeat;
-}
-
-input#name:focus:invalid,
-input#phone:focus:invalid,
-input#mail:focus:invalid {
-    background: rgb(223, 140, 144) url(invalid.png) bottom right/contain no-repeat;
-}
-
 
 /* ===============================
     Mobile Styles up to 480 pixels
@@ -129,23 +120,11 @@ input#mail:focus:invalid {
 /* this is a media querie for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
 
-    /* the text of body is set to black with a background color of light gray */
-    body {
-        color: black;
-        background-color: lightgray;
-    }
-
     /* the elements with the id's of about, person, edu all have 75 pixels of padding at the top */
     #about,
     #person,
     #edu {
         padding-top: 75px;
-    }
-
-    /* the image with the id of navimg has a height of 200 pixels and a width of 100% */
-    img#navimg {
-        height: 200px;
-        width: 100%;
     }
 
     /* the unordered list inside the nav are being centered, they do not have any text decoration, they are being displayed in one line, has 50 pixels of padding to both the left and right, 5 pixels of padding to the bottom, has a background color of black, has a width of 100% of the pages body */
@@ -247,8 +226,6 @@ input#mail:focus:invalid {
     /* the following elements will not be displayed on mobile devices */
     footer,
     h1,
-    #westmec,
-    #code,
     #computer {
         display: none;
     }
@@ -262,11 +239,6 @@ input#mail:focus:invalid {
 /* this is a media querie for devices with a width of 481 pixels or greater*/
 @media only screen and (min-width:481px) {
 
-    /* the background of the body is a linear gradient that transitions from light blue to white to gray */
-    body {
-        background: linear-gradient(to right, lightblue, white, gray);
-    }
-
     /* the element with the id of mobile will not be displayed for desktop devices */
     #mobile {
         display: none;
@@ -276,12 +248,6 @@ input#mail:focus:invalid {
     #pagetop {
         text-decoration: none;
         color: darkcyan;
-    }
-
-    /* the element with the id of contact, the text is being centered and has 350 pixels of padding to the right */
-    #contact {
-        text-align: center;
-        padding-right: 350px;
     }
 
     /* the footer list items will be displayed inline and have have a text color of dark cyan */

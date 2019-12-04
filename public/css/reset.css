@@ -1,10 +1,9 @@
 @charset "utf-8";
 
-/* Basic styles to be used with all devices and under all conditions */
+/* Basic styles to be used with all devices and under all conditions. */
 
 article,
 body,
-footer,
 header,
 html,
 img,
@@ -55,7 +54,6 @@ dl,
 dt,
 dd,
 ol,
-fieldset,
 form,
 label,
 legend,
@@ -86,8 +84,8 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
     font: inherit;
+    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
     -webkit-box-sizing: border-box;
@@ -95,12 +93,12 @@ video {
     box-sizing: border-box;
 }
 
-/* Set the default page element styles */
+/* Sets the default page element styles. */
 
 body {
     margin: 0px;
     width: 100%;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
     font-weight: inherit;
     line-height: 1.2em;
@@ -108,7 +106,6 @@ body {
     padding: 0px;
     text-decoration: none;
     vertical-align: baseline;
-
 }
 
 ul,
@@ -125,7 +122,7 @@ nav a {
     text-decoration: none;
 }
 
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers. */
 article,
 aside,
 details,
