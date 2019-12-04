@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+/* around the images with the class of images, it has a 2 pixel solid black border, and a box shadow of the color below */
+img.images {
+   border: 2px solid black;
+   box-shadow: 10px 15px #888888;
+}
+
+/* the figcaption has a font size of 2 em, background color of black, and 20 pixels of padding to the top */
+figcaption {
+   font-size: 2em;
+   background-color: black;
+   padding-top: 20px;
+}
+
+/* the following elements, the text is going to be centered */
+article li,
+h1,
+h3 {
+   text-align: center;
+}
+
+/* both the articles with the id of computer and mobile have 10 pixels of padding at the bottom */
+article#computer li,
+article#mobile li{
+   padding-bottom: 10px;
+}
+
+/* the p tags text is going to be centered, has 30 pixels of padding to the left and right */
+p {
+   text-align: center;
+   padding: 0px 30px 0px 30px;
+}
+
+/* the images with the class of images are being displayed as block, both margin left and margin right are set to auto to center the images, has a width of 700 pixels  */
+.images {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height: 300px;
+   width: 700px;
+}

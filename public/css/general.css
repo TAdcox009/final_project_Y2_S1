@@ -1,0 +1,300 @@
+@charset "utf-8";
+
+/* font style */
+
+/* this adds the font following font from google */
+@font-face {
+    font-family: 'Kalam', cursive;
+    src: url('https://fonts.googleapis.com/css?family=Kalam');
+}
+
+/* nav styles */
+
+/* the nav is being centerd, has no underline under it. displays it in the same line, adds 50 pixels of padding to the left and right, changes the background color to black */
+nav ul li {
+    text-align: center;
+    list-style: none;
+    display: inline;
+    padding: 5px 50px 0px 50px;
+    background-color: black;
+}
+
+/* changes the text color to dark cyan */
+li a {
+    color: darkcyan;
+}
+
+/* displays the nav list items as block, floated left, has a width of 25% */
+nav li {
+    display: block;
+    float: left;
+    width: 25%;
+    height: 25px;
+}
+
+/* the image with the id of navimg has a height of 300 pixels and a width of 100% of the page body */
+img#navimg {
+    height: 300px;
+    width: 100%;
+}
+
+/* for the following elements, it centers the text */
+p,
+h1,
+h2,
+h3,
+#computer,
+#mobile {
+    text-align: center;
+}
+
+/* adds the following font family to the body, adds 10 pixels of padding */
+body {
+    font-family: 'Kalam', cursive;
+    padding-bottom: 10px;
+}
+
+/* for all p tags the font size is being set to 20 pixels */
+p {
+    font-size: 20px;
+}
+
+/* image styles */
+
+/* the images with the id of phoneicon and emailicon are being set to a width and height of 20 pixels, and adds 5 pixels of padding to the right */
+#phoneicon,
+#emailicon {
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+/* the element that has a id of code is being floated left, adds 25 pixels of padding to the left and 10 pixels of padding to the bottom, has a width of 350 pixels and a height of 200 pixels */
+#code {
+    float: left;
+    padding: 0px 0px 10px 25px;
+    width: 350px;
+    height: 200px;
+}
+
+/* the element that has a id of westmec is being floated right, adds 25 pixels of padding to the right and 10 pixels of padding to the bottom, has a width and height of 200 pixels */
+#westmec {
+    float: right;
+    padding: 0px 25px 10px 0px;
+    width: 200px;
+    height: 200px;
+}
+
+fieldset {
+    border: 0px;
+}
+
+form {
+    text-align: center;
+
+}
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 400px;
+}
+
+.form {
+    padding-top: 10px;
+}
+
+#buttons {
+    padding-left: 150px;
+}
+
+input#name:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+    background: rgb(156, 235, 156) url(valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+    background: rgb(223, 140, 144) url(invalid.png) bottom right/contain no-repeat;
+}
+
+
+/* ===============================
+    Mobile Styles up to 480 pixels
+  ===============================
+*/
+
+/* this is a media querie for mobile devices with a max width of 480 pixels */
+@media only screen and (max-width:480px) {
+
+    /* the text of body is set to black with a background color of light gray */
+    body {
+        color: black;
+        background-color: lightgray;
+    }
+
+    /* the elements with the id's of about, person, edu all have 75 pixels of padding at the top */
+    #about,
+    #person,
+    #edu {
+        padding-top: 75px;
+    }
+
+    /* the image with the id of navimg has a height of 200 pixels and a width of 100% */
+    img#navimg {
+        height: 200px;
+        width: 100%;
+    }
+
+    /* the unordered list inside the nav are being centered, they do not have any text decoration, they are being displayed in one line, has 50 pixels of padding to both the left and right, 5 pixels of padding to the bottom, has a background color of black, has a width of 100% of the pages body */
+    nav ul li {
+        text-align: center;
+        list-style: none;
+        display: inline;
+        padding: 0px 50px 5px 50px;
+        background-color: black;
+        width: 100%;
+    }
+
+    /* the list items with an a tag inside them have a text color of dark cyan */
+    li a {
+        color: darkcyan;
+    }
+
+    /* the nav list items are being displayed as blocks, floated left, and has a width of 20% */
+    nav li {
+        display: block;
+        float: left;
+        width: 20%;
+    }
+
+    /* the element with the id of about has 75 pixels of padding to the top */
+    #about {
+        padding-top: 75px;
+    }
+
+    /* the element with the class of "this" has a text color of white, background color of black, has a border radius of 20 (making the borders rounded), adds 10 pixels of padding around all sides of the element, has no text decoration */
+    .this {
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    /* the element with the class of webimg has 10 pixels of padding on the top */
+    .webimg {
+        padding-top: 10px;
+    }
+
+    /* the element with the class of flip-card has a transparent background, width of 100%, height of 300 pixels, a perspective of 1000 pixels, is being displayed as a flex box, the flex direction is making it into columns, adds 10 pixels of padding to the top and bottom.*/
+    .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+        perspective: 1000px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+    }
+
+    /* the element with the class of flip-card-iner has a position of relative, a width of 100%, a height of 300 pixels, centers the text, has a transition of transform with 0.8 seconds, and the transform style is set to preserve-3d so it looks 3d when it flips */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* the element with the class of flip-card and flip-card-inner has a transform to rotate y 180 degrees */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* the elements with the class of flip-card-front and flip-card-back have a postion of absolute, has a width of 100%, a hieght of 30 pixels, backface-visibility Determines whether or not the back side of a transformed element is visible */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 30px;
+        backface-visibility: hidden;
+    }
+
+    /* the elements with the class of flip-card-front has the following background color, the text color is being set to black, has a height of 300 pixels*/
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        height: 300px;
+    }
+
+    /*  the elements with the class of flip-card-back has a background color of dark cyan, has a text color of white, trasforms y 180 degrees, has a height of 300 pixels */
+    .flip-card-back {
+        background-color: darkcyan;
+        color: white;
+        transform: rotateY(180deg);
+        height: 300px;
+    }
+
+    /* the element with the class of flip has 5 pixels of padding to the top */
+    .flip {
+        padding-top: 5px;
+    }
+
+    /* the following elements will not be displayed on mobile devices */
+    footer,
+    h1,
+    #westmec,
+    #code,
+    #computer {
+        display: none;
+    }
+}
+
+/* ============================================
+    Tablet and Desktop Devices: 481px or more
+  ============================================
+*/
+
+/* this is a media querie for devices with a width of 481 pixels or greater*/
+@media only screen and (min-width:481px) {
+
+    /* the background of the body is a linear gradient that transitions from light blue to white to gray */
+    body {
+        background: linear-gradient(to right, lightblue, white, gray);
+    }
+
+    /* the element with the id of mobile will not be displayed for desktop devices */
+    #mobile {
+        display: none;
+    }
+
+    /* the element with the id of pagetop has no text decoration and a text color of dark cyan */
+    #pagetop {
+        text-decoration: none;
+        color: darkcyan;
+    }
+
+    /* the element with the id of contact, the text is being centered and has 350 pixels of padding to the right */
+    #contact {
+        text-align: center;
+        padding-right: 350px;
+    }
+
+    /* the footer list items will be displayed inline and have have a text color of dark cyan */
+    footer p {
+        display: inline;
+        color: darkcyan;
+    }
+
+    /* the background color for the fotter is black and the text is being centered */
+    footer {
+        background-color: black;
+        text-align: center;
+        height: 25px;
+        padding-top: 5px;
+    }
+}

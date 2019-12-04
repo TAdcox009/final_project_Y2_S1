@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+/* the nav with the id of links inside the header that is a child of the body transforms x 10 degrees, hasa background color of red, font color of white, a font size of 25 pixels, is being displayed as block, floated left, has 3 pixels between letters, and has a line height of 40 pixels */
+body>header nav.links a {
+   transform: rotateX(10deg);
+   background-color: rgb(156, 41, 41);
+   color: white;
+   font-size: 25px;
+   display: block;
+   float: left;
+   height: 40px;
+   letter-spacing: 3px;
+   line-height: 40px;
+}
+
+/* for all h1's the font size is going to be 25 pixels, 30 pixels of padding to the top, 10 pixels on the bottom and 0 on the left and right */
+h1 {
+   font-size: 25px;
+   padding: 30px 0px 10px 0px;
+}
+
+/* center the text of all p tags, adds 30 pixels of padding both to the left and right */
+p {
+   text-align: center;
+   padding: 0px 30px 0px 30px;
+}
