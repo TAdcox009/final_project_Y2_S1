@@ -67,7 +67,7 @@ div#buttons {
 
 /* nav styles */
 
-/* the nav is being centerd, has no underline under it. displays it in the same line, adds 50 pixels of padding to the left and right, changes the background color to black */
+/* the nav is being centered, has no underline under it. displays it in the same line, adds 50 pixels of padding to the left and right, changes the background color to black */
 nav ul li {
     text-align: center;
     list-style: none;
@@ -117,11 +117,10 @@ p {
   ===============================
 */
 
-/* this is a media querie for mobile devices with a max width of 480 pixels */
+/* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
 
-    /* the elements with the id's of about, person, edu all have 75 pixels of padding at the top */
-    #about,
+    /* the elements with the id's of person, edu all have 75 pixels of padding at the top */
     #person,
     #edu {
         padding-top: 75px;
@@ -147,11 +146,6 @@ p {
         display: block;
         float: left;
         width: 20%;
-    }
-
-    /* the element with the id of about has 75 pixels of padding to the top */
-    #about {
-        padding-top: 75px;
     }
 
     /* the element with the class of "this" has a text color of white, background color of black, has a border radius of 20 (making the borders rounded), adds 10 pixels of padding around all sides of the element, has no text decoration */
@@ -194,7 +188,7 @@ p {
         transform: rotateY(180deg);
     }
 
-    /* the elements with the class of flip-card-front and flip-card-back have a postion of absolute, has a width of 100%, a hieght of 30 pixels, backface-visibility Determines whether or not the back side of a transformed element is visible */
+    /* the elements with the class of flip-card-front and flip-card-back have a position of absolute, has a width of 100%, a height of 30 pixels, backface-visibility Determines whether or not the back side of a transformed element is visible */
     .flip-card-front,
     .flip-card-back {
         position: absolute;
@@ -210,7 +204,7 @@ p {
         height: 300px;
     }
 
-    /*  the elements with the class of flip-card-back has a background color of dark cyan, has a text color of white, trasforms y 180 degrees, has a height of 300 pixels */
+    /*  the elements with the class of flip-card-back has a background color of dark cyan, has a text color of white, transforms y 180 degrees, has a height of 300 pixels */
     .flip-card-back {
         background-color: darkcyan;
         color: white;
@@ -224,7 +218,6 @@ p {
     }
 
     /* the following elements will not be displayed on mobile devices */
-    footer,
     h1,
     #computer {
         display: none;
@@ -236,7 +229,7 @@ p {
   ============================================
 */
 
-/* this is a media querie for devices with a width of 481 pixels or greater*/
+/* this is a media query for devices with a width of 481 pixels or greater*/
 @media only screen and (min-width:481px) {
 
     /* the element with the id of mobile will not be displayed for desktop devices */
@@ -250,17 +243,13 @@ p {
         color: darkcyan;
     }
 
-    /* the footer list items will be displayed inline and have have a text color of dark cyan */
-    footer p {
-        display: inline;
-        color: darkcyan;
-    }
-
-    /* the background color for the fotter is black and the text is being centered */
-    footer {
+    #returnbutton{
+        float: left;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
         background-color: black;
-        text-align: center;
-        height: 25px;
-        padding-top: 5px;
+        text-decoration: none;
+        color: darkcyan;
     }
 }
