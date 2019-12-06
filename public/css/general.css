@@ -93,9 +93,7 @@ nav li {
 p,
 h1,
 h2,
-h3,
-#computer,
-#mobile {
+h3 {
     text-align: center;
 }
 
@@ -147,81 +145,6 @@ p {
         float: left;
         width: 20%;
     }
-
-    /* the element with the class of "this" has a text color of white, background color of black, has a border radius of 20 (making the borders rounded), adds 10 pixels of padding around all sides of the element, has no text decoration */
-    .this {
-        color: white;
-        background-color: black;
-        border-radius: 20px;
-        padding: 10px;
-        text-decoration: none;
-    }
-
-    /* the element with the class of webimg has 10 pixels of padding on the top */
-    .webimg {
-        padding-top: 10px;
-    }
-
-    /* the element with the class of flip-card has a transparent background, width of 100%, height of 300 pixels, a perspective of 1000 pixels, is being displayed as a flex box, the flex direction is making it into columns, adds 10 pixels of padding to the top and bottom.*/
-    .flip-card {
-        background-color: transparent;
-        width: 100%;
-        height: 300px;
-        perspective: 1000px;
-        display: flex;
-        flex-direction: column;
-        padding: 10px 0px 10px 0px;
-    }
-
-    /* the element with the class of flip-card-iner has a position of relative, a width of 100%, a height of 300 pixels, centers the text, has a transition of transform with 0.8 seconds, and the transform style is set to preserve-3d so it looks 3d when it flips */
-    .flip-card-inner {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-
-    /* the element with the class of flip-card and flip-card-inner has a transform to rotate y 180 degrees */
-    .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
-    }
-
-    /* the elements with the class of flip-card-front and flip-card-back have a position of absolute, has a width of 100%, a height of 30 pixels, backface-visibility Determines whether or not the back side of a transformed element is visible */
-    .flip-card-front,
-    .flip-card-back {
-        position: absolute;
-        width: 100%;
-        height: 30px;
-        backface-visibility: hidden;
-    }
-
-    /* the elements with the class of flip-card-front has the following background color, the text color is being set to black, has a height of 300 pixels*/
-    .flip-card-front {
-        background-color: #bbb;
-        color: black;
-        height: 300px;
-    }
-
-    /*  the elements with the class of flip-card-back has a background color of dark cyan, has a text color of white, transforms y 180 degrees, has a height of 300 pixels */
-    .flip-card-back {
-        background-color: darkcyan;
-        color: white;
-        transform: rotateY(180deg);
-        height: 300px;
-    }
-
-    /* the element with the class of flip has 5 pixels of padding to the top */
-    .flip {
-        padding-top: 5px;
-    }
-
-    /* the following elements will not be displayed on mobile devices */
-    h1,
-    #computer {
-        display: none;
-    }
 }
 
 /* ============================================
@@ -231,12 +154,6 @@ p {
 
 /* this is a media query for devices with a width of 481 pixels or greater*/
 @media only screen and (min-width:481px) {
-
-    /* the element with the id of mobile will not be displayed for desktop devices */
-    #mobile {
-        display: none;
-    }
-
     /* the element with the id of pagetop has no text decoration and a text color of dark cyan */
     #pagetop {
         text-decoration: none;
