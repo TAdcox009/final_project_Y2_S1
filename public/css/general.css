@@ -8,63 +8,6 @@
     src: url('https://fonts.googleapis.com/css?family=Kalam');
 }
 
-/* form styles */
-
-/* sets the min and max width of the form, gives it a line height of 50 pixels. */
-form {
-    min-height: 81%;
-    margin: auto;
-    min-width: 480px;
-    max-width: 960px;
-    width: 100%;
-    line-height: 50px;
-}
-
-/* The top and bottom magrin is set to 0 pixels and the left and right margin is set to 50 pixels. */
-div {
-    margin: 0px 50px;
-}
-
-/* Adds a border around the form, rounds the border, adds a linear-gradient to inside the form. */
-fieldset {
-    border-width: 3px;
-    border-color: black;
-    border-radius: 10px;
-    background: linear-gradient(white, rgb(230, 230, 230));
-}
-
-/* Sets the font size of the legend text to 2em, adds 5 pixels of space between each letter. */
-legend {
-    font-size: 2em;
-    letter-spacing: 5px;
-}
-
-/* For the input element with the IDs of name, phone, and mail, they are being floated right, and given a width of 30% of the screen and 20 pixels of height. */
-input#name,
-input#phone,
-input#mail {
-    float: right;
-    width: 30%;
-    height: 20px;
-}
-
-/* Floats the textarea box right to line up with the input boxes, sets the width and height of the textarea box. */
-textarea {
-    margin-top: 10px;
-    height: 100px;
-    width: 55%;
-    float: right;
-    font-size: 14px;
-}
-
-/* Centers the submit and cancel button for the form. */
-div#buttons {
-    text-align: center;
-}
-
-/* end form styles */
-
-
 /* nav styles */
 
 /* the nav is being centered, has no underline under it. displays it in the same line, adds 50 pixels of padding to the left and right, changes the background color to black */
@@ -88,6 +31,8 @@ nav li {
     width: 25%;
     height: 25px;
 }
+
+/* end nav styles */
 
 /* for the following elements, it centers the text */
 p,
@@ -117,13 +62,6 @@ p {
 
 /* this is a media query for mobile devices with a max width of 480 pixels */
 @media only screen and (max-width:480px) {
-
-    /* the elements with the id's of person, edu all have 75 pixels of padding at the top */
-    #person,
-    #edu {
-        padding-top: 75px;
-    }
-
     /* the unordered list inside the nav are being centered, they do not have any text decoration, they are being displayed in one line, has 50 pixels of padding to both the left and right, 5 pixels of padding to the bottom, has a background color of black, has a width of 100% of the pages body */
     nav ul li {
         text-align: center;
@@ -153,20 +91,4 @@ p {
 */
 
 /* this is a media query for devices with a width of 481 pixels or greater*/
-@media only screen and (min-width:481px) {
-    /* the element with the id of pagetop has no text decoration and a text color of dark cyan */
-    #pagetop {
-        text-decoration: none;
-        color: darkcyan;
-    }
-
-    #returnbutton{
-        float: left;
-        position: -webkit-sticky;
-        position: sticky;
-        bottom: 0;
-        background-color: black;
-        text-decoration: none;
-        color: darkcyan;
-    }
-}
+@media only screen and (min-width:481px) {}

@@ -1,0 +1,39 @@
+/* form styles */
+
+/* Adds a border around the form, rounds the border, adds a linear-gradient to inside the form. */
+fieldset {
+    border-width: 3px;
+    border-color: black;
+    border-radius: 10px;
+}
+
+/* Sets the font size of the legend text to 2em, adds 5 pixels of space between each letter. */
+legend {
+    font-size: 2em;
+    letter-spacing: 5px;
+}
+
+/* For the input element with the IDs of name, phone, and mail, they are being floated right, and given a width of 30% of the screen and 20 pixels of height. */
+input#name,
+input#phone,
+input#mail {
+    float: right;
+    width: 30%;
+    height: 20px;
+}
+
+/* Floats the textarea box right to line up with the input boxes, sets the width and height of the textarea box. */
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 55%;
+    float: right;
+    font-size: 14px;
+}
+
+/* Centers the submit and cancel button for the form. */
+div#buttons {
+    text-align: center;
+}
+
+/* end form styles */
