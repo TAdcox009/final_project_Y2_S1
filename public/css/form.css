@@ -1,12 +1,5 @@
 /* form styles */
 
-/* Adds a border around the form, rounds the border, adds a linear-gradient to inside the form. */
-fieldset {
-    border-width: 3px;
-    border-color: black;
-    border-radius: 10px;
-}
-
 /* Sets the font size of the legend text to 2em, adds 5 pixels of space between each letter. */
 legend {
     font-size: 2em;

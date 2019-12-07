@@ -1,0 +1,31 @@
+ //work exp
+ 
+ <p> Hardworking, patient first year Coding student who is good listener and able to work under pressure. Seeking
+       the
+       position of web developer. </p>
+   <h2>Knowledge, Skills, and Abilities:</h2>
+   <p>- Time Management — Managing one's own time and the time of others.</p>
+   <p>- Judgment and Decision Making — Considering the relative costs and benefits of potential actions to choose the
+       most appropriate one.</p>
+   <p> - Critical Thinking — Using logic and reasoning to identify the strengths and weaknesses of alternative
+       solutions, conclusions or approaches to problems.</p>
+   <p> - Active Listening — Giving full attention to what other people are saying, taking time to understand the
+       points being made, asking questions as appropriate, and not interrupting at inappropriate times.</p>
+   <h1>Employment / Volunteer Activities:</h1>
+   <h3> Saint Mary's Food Bank Phoenix, AZ May 2016.</h3>
+<p>  Responsibilities include: Packed food in boxes.</p>
+       <h3>Greatful Hearts Glendale, AZ November 20, 2018.</h3>
+       <p>  Responsibilities include: Setting up tables, preparing food, served food, cleaned up kitchen and dining area.</p>
+   <h2>Extracurricular Activities:</h2>
+   <p>I joined the soccer team during my 6th grade year from 2013-2014.
+       Developed team working skills and communication skills.</p>
+   <p>I was in student council from 2012-2013 where I learned to manage my time better
+       and become more of an active listener.
+   </p>
+
+//edu
+
+  <p>Sierra Linda High School Phoenix, AZ.</p>
+    <p> Expected Graduation date is in May of 2020.</p>
+    <p> West-MEC Coding Program GPA: 4</p>
+    <p> Other Coursework: Orchestra, culinary, photography, and Spanish 1</p>
