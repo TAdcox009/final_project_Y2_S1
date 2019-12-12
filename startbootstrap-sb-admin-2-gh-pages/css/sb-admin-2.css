@@ -9375,16 +9375,16 @@ a.text-primary:hover, a.text-primary:focus {
   color: #845db3 !important;
 }
 
+a.text-success:hover, a.text-success:focus {
+  color: #845db3 !important;
+}
+
 .text-info {
   color: #f5ec78 !important;
 }
 
 a.text-info:hover, a.text-info:focus {
   color: #f5ec78 !important;
-}
-
-a.text-success:hover, a.text-success:focus {
-  color: #845db3 !important;
 }
 
 .text-node {

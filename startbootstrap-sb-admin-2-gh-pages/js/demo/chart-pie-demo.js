@@ -9,9 +9,9 @@ var myPieChart = new Chart(ctx, {
   data: {
     labels: ["HTML5", "CSS3", "JavaScript", "Node", "SCSS", "Bootstrap", "Version Control"],
     datasets: [{
-      data: [25, 25, 15, 11, 8, 6, 10],
-      backgroundColor: ['#fc4103', '#5000b3', '#f5ec78', '#0b9913', '#db53a3', '#f7ac43', '#4f4e4c'],
-      hoverBackgroundColor: ['#fc4103', '#5000b3', '#f5ec78', '#0b9913', '#db53a3', '#f7ac43', '#4f4e4c'],
+      data: [90, 90, 60, 30, 30, 30, 50],
+      backgroundColor: ['#eb6142', '#845db3', '#f5ec78', '#3ca241', '#e35eab', '#f7af4a', '#595855'],
+      hoverBackgroundColor: ['#eb6142', '#845db3', '#f5ec78', '#3ca241', '#e35eab', '#f7af4a', '#595855'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
   },
