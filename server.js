@@ -12,17 +12,6 @@ app.get('/',  (req, res) => {
     res.render('index', { layout: false });
 });
 
-app.get('/education',  (req, res) => {
-    res.render('education', { layout: false });
-});
-
-app.get('/skillset',  (req, res) => {
-    res.render('skillset', { layout: false });
-});
-
-app.get('/workexp',  (req, res) => {
-    res.render('workexp', { layout: false });
-});
 app.listen(8080, () => {
     console.log('Server is starting at port ', 8080);
 });
