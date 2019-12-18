@@ -26,7 +26,6 @@
       background-color: transparent;
       width: 150px;
       height: 250px;
-      border: 1px solid black;
     }
     
     /* This container is needed to position the front and back side */
@@ -54,7 +53,7 @@
 
   
     #pikachu {
-      background-color: rgb(232, 225, 39);
+      background-color: #f4623a!important;
       transform: rotateY(180deg);
       width: 150px;
       height: 250px;
@@ -63,5 +62,7 @@
       background-position: center;
       overflow: hidden;
     }
-   
-   
+
+    #pika {
+      transform: rotateY(180deg);
+    }
