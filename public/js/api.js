@@ -12,3 +12,18 @@ fetch(`https://pokeapi.co/api/v2/${_condition}/${_pocketmonster}`)
     selector.innerHTML = pokeIMG;
 }
     );
+
+       // primarina
+  var _condition = "pokemon"
+  var _pocketmonster = "primarina"
+  
+  fetch(`https://pokeapi.co/api/v2/${_condition}/${_pocketmonster}`)
+  .then( res => res.json())
+  .then(data => {
+      console.log(data.sprites)
+      const {...img} = data.sprites;
+      selector = document.querySelector('#primarina');
+      pokeIMG = `<img src="${img.front_default}" id="primarina">`;
+      selector.innerHTML = pokeIMG;
+  }
+      );
