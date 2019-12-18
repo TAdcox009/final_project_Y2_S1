@@ -248,33 +248,20 @@
   width: 50px;
   height: 50px;
   position: absolute;
+  position: relative;
+  -webkit-animation: myfirst 9s 4; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation: myfirst 9s 4;
+  animation-direction: alternate;
 }
+
+@keyframes myfirst {
+  0%   {right: 0px; }
+  50%  {right: 1050px;}
+  100% {right: 0px; }
+}
+
 </style>
-
-
-<p>
-<button onclick="myMove()">Click Me</button> 
-</p>
-
-
-
-<script>
-function myMove() {
-  var elem = document.getElementById("myAnimation");   
-  var pos = 0;
-  var id = setInterval(frame, .01);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.right = pos + 'px'; 
-    }
-  }
-}
-</script>
-
-
        <!-- pikachu -->
             <div class="card">
     <div id="pika" id ="myContainer" class="flip-card">
