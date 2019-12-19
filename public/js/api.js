@@ -27,3 +27,17 @@ fetch(`https://pokeapi.co/api/v2/${_condition}/${_pocketmonster}`)
       selector.innerHTML = pokeIMG;
   }
       );
+       // diancie
+  var _condition = "pokemon"
+  var _pocketmonster = "diancie"
+  
+  fetch(`https://pokeapi.co/api/v2/${_condition}/${_pocketmonster}`)
+  .then( res => res.json())
+  .then(data => {
+      console.log(data.sprites)
+      const {...img} = data.sprites;
+      selector = document.querySelector('#diancie');
+      pokeIMG = `<img src="${img.front_default}" id="diancie">`;
+      selector.innerHTML = pokeIMG;
+  }
+      );
